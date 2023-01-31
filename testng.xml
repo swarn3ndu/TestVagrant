@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Suite1">
+    <test name = "test1">
+
+        <parameter name = "movieName" value="Pushpa: The Rise - Part 1"/>
+
+        <classes>
+            <class name = "tvj.movie.test.TC_01_Compare">
+                <methods>
+                    <include name="fetchFromIMDB"/>
+                    <include name="fetchFromWiki"/>
+                    <include name="compareData"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
